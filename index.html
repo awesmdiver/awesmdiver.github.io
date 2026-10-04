@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free tools for a smoother modded Skyrim</title>
+<meta name="description" content="Free quality-of-life tools for modded Skyrim: ModPacer, Vortex Collection Tools and SkyrimNet MultiProxy.">
+<style>
+:root { --accent:#d4a855; --bg:#18181c; --text:#e8e6e1;
+  --panel:color-mix(in srgb,var(--text) 6%,var(--bg)); --line:color-mix(in srgb,var(--text) 16%,var(--bg)); --muted:color-mix(in srgb,var(--text) 60%,var(--bg)); }
+* { box-sizing:border-box }
+body { background:var(--bg); color:var(--text); font-family:system-ui,sans-serif; margin:0; line-height:1.5 }
+a { color:var(--accent); text-decoration:none } a:hover { text-decoration:underline }
+.wrap { max-width:900px; margin:0 auto; padding:0 20px }
+.note { background:var(--panel); border:1px dashed var(--line); border-radius:8px; padding:10px 14px; color:var(--muted); font-size:.8rem; margin:24px 0 }
+.note b { color:var(--text) }
+.badge { font-size:.7rem; border-radius:10px; padding:2px 9px; border:1px solid var(--accent); color:var(--accent); margin-left:8px; vertical-align:middle }
+header.hero { padding:44px 0 28px; border-bottom:1px solid var(--line) }
+header.hero h1 { font-size:2rem; margin:0 0 6px }
+header.hero p { color:var(--muted); font-size:1.05rem; margin:0; max-width:620px }
+.grid { display:grid; grid-template-columns:1fr; gap:16px; padding:28px 0 8px }
+.tool { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:22px 24px; display:grid; grid-template-columns:1fr auto; gap:6px 24px; align-items:start }
+.tool h2 { font-size:1.2rem; margin:0 }
+.tool .tag { color:var(--muted); font-size:.92rem; margin:2px 0 10px }
+.tool ul { margin:0; padding-left:18px; color:var(--text); font-size:.9rem }
+.tool li { margin:3px 0 }
+.tool .go { display:flex; flex-direction:column; gap:8px; align-items:flex-end; min-width:150px }
+.btn { display:inline-block; font-size:.85rem; border-radius:6px; padding:8px 16px; border:1px solid var(--line); background:var(--panel); color:var(--text); white-space:nowrap }
+.btn.primary { background:var(--accent); border-color:var(--accent); color:var(--bg); font-weight:600 }
+.btn:hover { text-decoration:none; filter:brightness(1.15) }
+.pill { font-size:.72rem; border:1px solid var(--line); border-radius:10px; padding:2px 9px; color:var(--muted); margin-left:8px; vertical-align:middle }
+.companion { margin:8px 0 0; padding:14px 18px; border:1px dashed var(--line); border-radius:10px; color:var(--muted); font-size:.9rem }
+.companion b { color:var(--text) }
+.tip { margin:36px 0 0; padding:20px 24px; border:1px solid var(--line); border-radius:10px; background:var(--panel); display:flex; justify-content:space-between; gap:20px; align-items:center; flex-wrap:wrap }
+.tip p { margin:0; } .tip .sub { color:var(--muted); font-size:.9rem }
+.tip .btns { display:flex; gap:10px }
+footer { color:var(--muted); font-size:.8rem; padding:32px 0 48px; text-align:center }
+@media (max-width:640px) { .tool { grid-template-columns:1fr } .tool .go { align-items:flex-start; flex-direction:row; flex-wrap:wrap } }
+</style>
+</head>
+<body>
+<div class="wrap">
+    <header class="hero">
+    <h1>Free tools for Skyrim modding</h1>
+    <p>These tools help you spend less time fixing your mods and more time playing.</p>
+  </header>
+
+  <main class="grid">
+    <section class="tool">
+      <div>
+        <h2>ModPacer <span class="pill">Coming soon</span></h2>
+        <p class="tag">Easily install new mods and keep them on pace with updates.</p>
+        <ul>
+          <li>Check the SkyrimNet Plugin Hub and update your mods with one click.</li>
+          <li>Install new mods and see a clear list of what they need to run.</li>
+          <li>Works with both Vortex and Mod Organizer 2.</li>
+        </ul>
+      </div>
+      <div class="go">
+        <a class="btn primary" href="https://github.com/awesmdiver/modpacer/releases" rel="noopener">Get ModPacer</a>
+        <a class="btn" href="https://github.com/awesmdiver/modpacer#readme" rel="noopener">Read the guide</a>
+      </div>
+    </section>
+
+    <section class="tool">
+      <div>
+        <h2>Vortex Collection Tools</h2>
+        <p class="tag">Everything you need to run massive Vortex collections without the friction.</p>
+        <ul>
+          <li>Rebuild, update and clean up collections using clear step-by-step guides.</li>
+          <li>Merge plugins, find missing masters and fix load order cycles.</li>
+          <li>Runs next to Vortex and handles the manual steps for you.</li>
+        </ul>
+      </div>
+      <div class="go">
+        <a class="btn primary" href="https://github.com/awesmdiver/vortex-collection-tools/releases" rel="noopener">Get Collection Tools</a>
+      </div>
+    </section>
+
+    <section class="tool">
+      <div>
+        <h2>SkyrimNet MultiProxy</h2>
+        <p class="tag">Cloud or Local. Paid or Free. Any AI, straight to SkyrimNet.</p>
+        <ul>
+          <li>Link the AI of your choice to the game with a one-time setup.</li>
+          <li>Run local models with all your graphics card settings in one place.</li>
+          <li>Starts automatically in the background when you play.</li>
+        </ul>
+      </div>
+      <div class="go">
+        <a class="btn primary" href="https://github.com/awesmdiver/skyrimnet-multiproxy/releases" rel="noopener">Get MultiProxy</a>
+      </div>
+    </section>
+
+    <p class="companion"><b>Vortex Bridge</b> is a small extension that lets these tools talk to Vortex. It is included in both downloads so you do not need to get it separately.</p>
+  </main>
+
+  <div class="tip">
+    <div><p><b>Enjoying these tools?</b></p><p class="sub">A tip helps keep the coffee flowing.</p></div>
+    <div class="btns"><a class="btn" href="https://paypal.me/awesmdiver" rel="noopener">PayPal</a><a class="btn" href="https://www.venmo.com/u/awesmdiver" rel="noopener">Venmo</a></div>
+  </div>
+
+  <footer>Made by awesmdiver · Not affiliated with Nexus Mods, Vortex, SkyrimNet or fateless.ai</footer>
+</div>
+</body>
+</html>
